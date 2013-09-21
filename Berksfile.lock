@@ -11,7 +11,7 @@
     },
     "openvpn": {
       "locked_version": "1.1.5",
-      "git": "https://github.com/heffergm/openvpn.git",
+      "git": "https://github.com/heffergm/chef-openvpn.git",
       "ref": "79da25f6ade55d11ecdce81f29327e72fee115b9"
     },
     "dmg": {
