@@ -8,10 +8,16 @@ default[:openvpn][:key][:org]      = 'Mapzen'
 default[:openvpn][:key][:email]    = 'grant@mapzen.com'
 
 default[:openvpn][:routes] = [
-  "push 'route 10.0.1.0 255.255.255.0'",
-  "push 'route 10.0.2.0 255.255.255.0'",
-  "push 'route 10.0.3.0 255.255.255.0'"
+  "push 'route 10.0.0.0 255.0.0.0'"
 ]
+
+## in case you want to push
+##   individual routes for each subnet
+#default[:openvpn][:routes] = [
+#  "push 'route 10.0.1.0 255.255.255.0'",
+#  "push 'route 10.0.2.0 255.255.255.0'",
+#  "push 'route 10.0.3.0 255.255.255.0'"
+#]
 
 default[:openvpn][:local]           = node[:ipaddress]
 default[:openvpn][:proto]           = 'udp'
