@@ -1,12 +1,11 @@
 # openvpn
-default[:openvpn][:key][:size]      = 2048
-default[:openvpn][:key][:expire]    = 3650
-
+default[:openvpn][:key][:size]     = 2048
+default[:openvpn][:key][:expire]   = 3650
 default[:openvpn][:key][:country]  = 'US'
 default[:openvpn][:key][:province] = 'NY'
 default[:openvpn][:key][:city]     = 'New York'
-default[:openvpn][:key][:org]      = 'SamsungAccelerator'
-default[:openvpn][:key][:email]    = 'grant@samsungaccelerator.com'
+default[:openvpn][:key][:org]      = 'Mapzen'
+default[:openvpn][:key][:email]    = 'grant@mapzen.com'
 
 default[:openvpn][:routes] = [
   "push 'route 10.0.1.0 255.255.255.0'",

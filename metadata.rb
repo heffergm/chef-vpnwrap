@@ -1,10 +1,10 @@
 name             'vpnwrap'
-maintainer       'YOUR_COMPANY_NAME'
-maintainer_email 'YOUR_EMAIL'
+maintainer       'Mapzen'
+maintainer_email 'grant@mapzen.com'
 license          'All rights reserved'
-description      'Installs/Configures postgis'
+description      'Installs/Configures openvpn'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          '0.0.1'
+version          '0.0.2'
 
 %w{ apt openvpn }.each do |dep|
     depends dep
